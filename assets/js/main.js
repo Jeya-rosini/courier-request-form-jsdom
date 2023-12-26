@@ -27,11 +27,34 @@ validateForm.addField('#phoneNumber', [
        
     },
     {
+        rule:'number',
+    },
+    {
         rule: 'minLength',
         value: 10,
     },
     {
         rule: 'maxLength',
-        value:10,
+        value: 10,
     }
-])
+],
+    {
+        errorLabelCssClass: ["form-error"],
+    }
+);
+validateForm.addField('#date', [{
+    rule: 'required',
+},
+],
+    {
+        errorLabelCssClass: ["form-error"],
+    }
+);
+validateForm.addField('#pickup-address', [{
+    rule: 'required',
+},
+],
+    {
+        errorLabelCssClass: ["form-error"],
+    }
+);
