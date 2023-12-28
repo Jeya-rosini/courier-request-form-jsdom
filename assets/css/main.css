@@ -13,5 +13,5 @@
 }
 
 .form-error{
-    @apply font-bold mt-3 text-sm text-white
+    @apply font-bold mt-3 text-sm !text-white
 }
